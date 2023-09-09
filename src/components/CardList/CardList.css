@@ -1,0 +1,48 @@
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 880px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sort {
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04), 0 8px 16px rgba(96, 97, 112, 0.16);
+    border-radius: 12px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.sortLink {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7B8E98;
+    transition: .2s;
+   
+    margin: 0 auto;
+}
+
+.sort:hover {
+    box-shadow: 0 2px 4px rgba(124, 124, 180, 0.04);
+}
+
+.sortLink:hover {
+    cursor: pointer;
+    color: black;
+}
+

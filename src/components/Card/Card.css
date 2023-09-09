@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 2px 4px rgba(40, 41, 61, 0.04), 0 8px 16px rgba(83, 84, 97, 0.16);
+    cursor: pointer;
+}
+
+.card__desc {
+    font-size: 16px;
+    padding-top: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+.card__image {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.card__name {
+    font-size: 16px;
+    line-height: 1.25;
+    flex: 1;
+}
